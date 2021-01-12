@@ -1,0 +1,11 @@
+<ui title="Robot Control" closeable="true" on-close="closeEventHandler" resizable="false" activate="false">
+    <group layout="form" flat="true">
+        <label text="Right Speed (rad/s): 0.00" id="1"/>
+        <hslider tick-position="above" tick-interval="1" minimum="-10" maximum="10" on-change="speedLMotor" id="2"/>
+        <label text="Left Speed (rad/s): 0.00" id="3"/>
+        <hslider tick-position="above" tick-interval="1" minimum="-10" maximum="10" on-change="speedRMotor" id="4"/>
+        <label text="Fork Lift (m): 0.00" id="5"/>
+        <hslider tick-position="above" tick-interval="1" minimum="0" maximum="5" on-change="forkLiftPosition" id="6"/>
+    </group>
+    <label text="" style="* {margin-left: 400px;}"/>
+</ui>
